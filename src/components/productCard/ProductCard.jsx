@@ -1,5 +1,7 @@
 import React from "react";
 import goldStar from "../../assets/images/goldStar.svg";
+import EmptyHeart from "../../assets/images/emptyHeart.svg";
+import "./style.scss";
 
 const ProductCard = ({
   imgUrl,
@@ -10,8 +12,34 @@ const ProductCard = ({
   starNum,
 }) => {
   return (
-    <div className="productCard rounded overflow-hidden">
-      <img src={imgUrl} alt="" />
+    <div className="productCard relative rounded overflow-hidden cursor-pointer">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        className="absolute top-4 right-4 z-[1]"
+        onClick={(e) => {
+          // console.log((e.target.fill = "red"));
+          e.target.style.fill = "red";
+        }}
+      >
+        <path
+          d="M10.0938 5.01172C5.86581 5.01172 3.02734 8.43396 3.02734 12.6602C3.02734 17.4558 9.72721 23.1855 15.4688 27.0117C21.2103 23.1855 27.8327 17.3634 27.9102 12.6602C27.9798 8.43456 25.2436 5.01172 21.0156 5.01172C19.2119 5.01172 17.3826 5.96591 15.4688 7.87891C13.5549 5.96591 11.8975 5.01172 10.0938 5.01172Z"
+          stroke="white"
+        />
+      </svg>
+      <div className="relative">
+        <img src={imgUrl} alt="" />
+        <button
+          className="viewBtn opacity-0 bg-[#6D84FFB5] text-white text-xl font-medium absolute bottom-0 w-full py-3 px-4"
+          style={{ textShadow: "0px 4px 32px rgba(0, 0, 0, 0.25)" }}
+        >
+          View Product
+        </button>
+      </div>
+
       <h3 className="text-xl mt-6">{productName}</h3>
       <p className="mt-3">
         <span className="text-xl text-[#0006] line-through">

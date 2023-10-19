@@ -1,0 +1,10 @@
+.productCard{
+    .viewBtn{
+        transition: opacity 0.3s;
+    }
+}
+.productCard:hover{
+    .viewBtn{
+        opacity: 1;
+    }
+}
