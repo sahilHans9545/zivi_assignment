@@ -21,13 +21,21 @@ const ProductCard = ({
         fill="none"
         className="absolute top-4 right-4 z-[1]"
         onClick={(e) => {
-          // console.log((e.target.fill = "red"));
-          e.target.style.fill = "red";
+          console.log(e.target.getAttribute("fill"));
+          if (e.target.getAttribute("fill") === "none") {
+            e.target.setAttribute("fill", "#d32424");
+            console.log(e.target.firstElementChild);
+            e.target.firstElementChild.style.stroke = "none";
+          } else {
+            e.target.setAttribute("fill", "none");
+            e.target.firstElementChild.style.stroke = "white";
+          }
         }}
       >
         <path
           d="M10.0938 5.01172C5.86581 5.01172 3.02734 8.43396 3.02734 12.6602C3.02734 17.4558 9.72721 23.1855 15.4688 27.0117C21.2103 23.1855 27.8327 17.3634 27.9102 12.6602C27.9798 8.43456 25.2436 5.01172 21.0156 5.01172C19.2119 5.01172 17.3826 5.96591 15.4688 7.87891C13.5549 5.96591 11.8975 5.01172 10.0938 5.01172Z"
           stroke="white"
+          className="pointer-events-none"
         />
       </svg>
       <div className="relative">
