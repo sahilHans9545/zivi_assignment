@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../components/logo";
 import SearchBar from "../../components/searchBar/SearchBar";
 import "./style.scss";
@@ -20,6 +20,7 @@ import filterIcon from "../../assets/images/filter.png";
 import FilterHeading from "../../components/FilterHeading";
 
 const Products = () => {
+  const [showFilter, setShowFilter] = useState(false);
   return (
     <div
       id="productsPage"
@@ -33,10 +34,19 @@ const Products = () => {
       <div className="px-5 md:px-10 mt-8 sm:mt-12">
         <div className="flex justify-between items-center">
           <h2 className="text-[26px] lg:text-[40px]">Search Results</h2>
-          <img src={filterIcon} alt="" className="md:hidden w-6 h-7" />
+          <img
+            src={filterIcon}
+            alt=""
+            className="md:hidden w-6 h-7 cursor-pointer"
+            onClick={() => setShowFilter(!showFilter)}
+          />
         </div>
         <div className="flex mt-8 sm:mt-10 gap-16">
-          <div className="w-[270px] sticky h-fit top-8 hidden md:block">
+          <div
+            className={`w-[270px] md:sticky fixed top-0 left-0 h-screen bg-white overflow-auto  px-5 py-10 md:py-0 md:px-0 z-10 md:h-fit md:top-8  md:block md:translate-x-0 ${
+              showFilter ? "translate-x-0" : "translate-x-[-100%]"
+            } shadow-lg md:shadow-none `}
+          >
             <div>
               <FilterHeading heading="brand" />
               <div className="flex flex-col gap-5 mt-6">

@@ -61,11 +61,9 @@
         width: 100%;
     }
     @include sm{
-        // column-gap: 40px;
         grid-template-columns: repeat(3, 1fr);
     }
     @include md{
-        // column-gap: 40px;
         grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     }
     @include lg{
@@ -73,3 +71,10 @@
         grid-template-columns: repeat(auto-fit,239px);
     }
 }
+
+        // position: fixed;
+        // top: 0;
+        // left: 0;
+        // background: white;
+        // z-index: 79;
+        // padding: 40px 15px;
