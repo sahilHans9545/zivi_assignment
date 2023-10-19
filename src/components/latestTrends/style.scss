@@ -1,9 +1,17 @@
+@import "../../mixins.scss";
 .latestTrendsBox{
     width: 1025px;
+    max-width: 100%;
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
     .trendItems{
         display: grid;
-        grid-template-columns: repeat(auto-fit,165px);
-        column-gap: 30px;
+        column-gap: 15px;
+        row-gap: 30px;
+        grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+        
+        @include md{
+            column-gap: 30px;
+            grid-template-columns: repeat(auto-fit, 165px);
+        }
     }
 }

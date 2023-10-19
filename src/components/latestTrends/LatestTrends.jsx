@@ -39,7 +39,7 @@ const LatestTrends = () => {
   ]);
 
   return (
-    <div className="latestTrendsBox bg-white p-10 pb-20 rounded">
+    <div className="latestTrendsBox bg-white p-4 md:p-10 pb-20 rounded">
       <div className="latestTrends ">
         <p className="text-black text-[21px] font-medium">LatestTrends</p>
         <div className="trendItems mt-6">

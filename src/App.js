@@ -5,8 +5,8 @@ import Products from "./pages/searchedProducts";
 function App() {
   return (
     <div className="App">
-      {/* <Home /> */}
-      <Products />
+      <Home />
+      {/* <Products /> */}
     </div>
   );
 }
