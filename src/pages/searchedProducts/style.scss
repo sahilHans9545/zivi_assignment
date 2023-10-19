@@ -11,6 +11,18 @@
     position: relative;
     margin: auto;
 
+    @include md {
+        margin-left: 40px;
+        max-width: calc(100% - 200px);
+    }
+
+    @include lg {
+        margin-left: auto;
+    }
+
+
+
+
     input {
         width: 100%;
         height: 48px;
@@ -54,7 +66,7 @@
     }
     @include md{
         // column-gap: 40px;
-        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     }
     @include lg{
         column-gap: 40px;
