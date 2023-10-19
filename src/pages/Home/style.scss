@@ -1,0 +1,43 @@
+#homePage{
+    background: rgba(215, 224, 255, 0.26);
+    position: relative;
+    // background-image: url("https://img1.wsimg.com/isteam/ip/f20b6afd-37da-4d22-8b55-c2bbb7a19551/priscilla-du-preez-dlxLGIy-2VU-unsplash.jpg/:/cr=t:7.43%25,l:0%25,w:100%25,h:74.99%25/rs=w:1240,h:620,cg:true");
+    background-image: url(../../assets/images/bg.png);
+    background-size: cover;
+    background-position: center;
+    .searchBar {
+            margin-top: 160px;
+            width: 915px;
+            max-width: 100%;
+            position: relative;
+    
+            input {
+                width: 100%;
+                height: 75px;
+                padding: 20px 40px;
+                border-radius: 20px;
+                background: #FFF;
+                border: none;
+                color: #000;
+                outline: none;
+                font-size: 32px;
+                font-weight: 400;
+    
+                &::placeholder {
+                    color: rgba(0, 0, 0, 0.40);
+                }
+            }
+    
+            img {
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                right: 42px;
+            }
+        }
+}
+
+
+
+ 
+
