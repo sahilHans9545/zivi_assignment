@@ -1,3 +1,5 @@
+@import "../../mixins.scss";
+
 #productsPage{
     background: rgb(255, 255, 255);
     padding-top: 40px;
@@ -11,14 +13,18 @@
 
     input {
         width: 100%;
-        height: 55px;
+        height: 48px;
         padding: 13px 28px;
         border-radius: 13.735px;
         border: 0.687px solid rgba(0, 0, 0, 0.50);
         color: #000;
         outline: none;
-        font-size: 21px;
+        font-size: 18px;
         font-weight: 400;
+        @include md{
+            height: 55px;
+            font-size: 21px;
+        }
 
     }
     img {
@@ -35,7 +41,23 @@
 
 .productsGrid{
     display: grid;
-    column-gap: 40px;
+    column-gap: 15px;
     row-gap: 32px;
-    grid-template-columns: repeat(auto-fit,239px);
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    .productImg{
+        width: 100%;
+    }
+    @include sm{
+        // column-gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include md{
+        // column-gap: 40px;
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    }
+    @include lg{
+        column-gap: 40px;
+        grid-template-columns: repeat(auto-fit,239px);
+    }
 }

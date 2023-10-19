@@ -39,7 +39,7 @@ const ProductCard = ({
         />
       </svg>
       <div className="relative">
-        <img src={imgUrl} alt="" />
+        <img src={imgUrl} alt="" className="productImg" />
         <button
           className="viewBtn opacity-0 bg-[#6D84FFB5] text-white text-xl font-medium absolute bottom-0 w-full py-3 px-4"
           style={{ textShadow: "0px 4px 32px rgba(0, 0, 0, 0.25)" }}
@@ -48,13 +48,15 @@ const ProductCard = ({
         </button>
       </div>
 
-      <h3 className="text-xl mt-6">{productName}</h3>
+      <h3 className="text-base sm:text-xl mt-4 sm:mt-6 whitespace-nowrap overflow-hidden text-ellipsis">
+        {productName}
+      </h3>
       <p className="mt-3">
-        <span className="text-xl text-[#0006] line-through">
+        <span className="sm:text-xl text-[#0006] line-through">
           Rs. {oldPrice}
         </span>
         &nbsp;
-        <span className="text-xl text-[#6D84FF]">Rs.{CurrentPrice}</span>
+        <span className="sm:text-xl text-[#6D84FF]">Rs.{CurrentPrice}</span>
       </p>
       <div className="mt-3 flex gap-1 items-center">
         <div className="flex gap-[2px]">

@@ -16,6 +16,7 @@ import star2 from "../../assets/images/star2.svg";
 import star3 from "../../assets/images/star3.svg";
 import star4 from "../../assets/images/star4.svg";
 import star5 from "../../assets/images/star5.svg";
+import filterIcon from "../../assets/images/filter.png";
 import FilterHeading from "../../components/FilterHeading";
 
 const Products = () => {
@@ -25,11 +26,17 @@ const Products = () => {
       className=" relative w-full min-h-[100vh]  pb-14 gap-5"
     >
       <Logo />
-      <SearchBar />
-      <div className="px-10 mt-12">
-        <h2 className="text-[26px] lg:text-[40px]">Search Results</h2>
-        <div className="flex mt-10 gap-16">
-          <div className="w-[270px]">
+      <div className="md:mt-0 mt-14 px-5 md:px-0">
+        <SearchBar />
+      </div>
+
+      <div className="px-5 md:px-10 mt-8 sm:mt-12">
+        <div className="flex justify-between items-center">
+          <h2 className="text-[26px] lg:text-[40px]">Search Results</h2>
+          <img src={filterIcon} alt="" className="md:hidden w-6 h-7" />
+        </div>
+        <div className="flex mt-8 sm:mt-10 gap-16">
+          <div className="w-[270px] sticky h-fit top-8 hidden md:block">
             <div>
               <FilterHeading heading="brand" />
               <div className="flex flex-col gap-5 mt-6">
