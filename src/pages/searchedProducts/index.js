@@ -41,12 +41,13 @@ const Products = () => {
       },
     };
 
-    getProducts(options);
+    // getProducts(options);
   }, [query]);
 
   const getProducts = async (options) => {
-    const searchedProducts = await fetchProducts(options);
-    setProducts(searchedProducts);
+    // const searchedProducts = await fetchProducts(options);
+    // setProducts(searchedProducts);
+    console.log("..");
   };
   return (
     <div
