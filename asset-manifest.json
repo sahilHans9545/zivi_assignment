@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.12d9060a.css",
+    "main.js": "/static/js/main.ad82f8ac.js",
+    "static/js/787.6cd57c7e.chunk.js": "/static/js/787.6cd57c7e.chunk.js",
+    "static/media/bg.png": "/static/media/bg.7826835b7dfb761ecbe3.png",
+    "static/media/product2.png": "/static/media/product2.e52899d5a3252874d21b.png",
+    "static/media/product4.png": "/static/media/product4.1b1511bb89ef685577e6.png",
+    "static/media/product3.png": "/static/media/product3.0c88c2805716eb51cee3.png",
+    "static/media/product1.png": "/static/media/product1.3addd58aebeb2ec14692.png",
+    "static/media/product6.png": "/static/media/product6.cf84515951388834b554.png",
+    "static/media/product7.png": "/static/media/product7.9be3f1ca7b2b503710ba.png",
+    "static/media/trend2.png": "/static/media/trend2.202b141942205920327b.png",
+    "static/media/trend4.png": "/static/media/trend4.1a910875c56565049228.png",
+    "static/media/product5.png": "/static/media/product5.2e3b30380e0148e79113.png",
+    "static/media/trend1.png": "/static/media/trend1.aaa08ef342d72536e3eb.png",
+    "static/media/product8.png": "/static/media/product8.2ab8033f7b7510779b7c.png",
+    "static/media/trend3.png": "/static/media/trend3.adb36380ef1e04b63357.png",
+    "static/media/trend5.png": "/static/media/trend5.d2e4cd7ac4f4250600d1.png",
+    "static/media/downArrow.svg": "/static/media/downArrow.8a22bddb0b6f0eff36576308e36759c2.svg",
+    "static/media/star1.svg": "/static/media/star1.df9916e09dc0714d93edfa30df1b46c3.svg",
+    "static/media/star2.svg": "/static/media/star2.85103fbe5bfc1bb868eeb85b27f3d71d.svg",
+    "static/media/star3.svg": "/static/media/star3.36553bdde9463f43b2db5a6deb1ab2d8.svg",
+    "static/media/star4.svg": "/static/media/star4.b98885120c2b1a8574d88f1c70c983c7.svg",
+    "static/media/star5.svg": "/static/media/star5.bf56e183111a34b3cb42a73de91f0801.svg",
+    "index.html": "/index.html",
+    "static/media/search.svg": "/static/media/search.41445c8d9a26dbbf89e5b0f3595e8239.svg",
+    "static/media/emptyHeart.svg": "/static/media/emptyHeart.4e9be66e758f546038c168696da24d8e.svg",
+    "static/media/goldStar.svg": "/static/media/goldStar.a79bfaa9cff36632833412bb1a0bf4d0.svg",
+    "main.12d9060a.css.map": "/static/css/main.12d9060a.css.map",
+    "main.ad82f8ac.js.map": "/static/js/main.ad82f8ac.js.map",
+    "787.6cd57c7e.chunk.js.map": "/static/js/787.6cd57c7e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12d9060a.css",
+    "static/js/main.ad82f8ac.js"
+  ]
+}
