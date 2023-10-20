@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/zivi_assignment/static/css/main.b6d90b0d.css",
-    "main.js": "/zivi_assignment/static/js/main.6f6235a5.js",
+    "main.js": "/zivi_assignment/static/js/main.ea404454.js",
     "static/media/bg.png": "/zivi_assignment/static/media/bg.7826835b7dfb761ecbe3.png",
     "static/media/product2.png": "/zivi_assignment/static/media/product2.e52899d5a3252874d21b.png",
     "static/media/product4.png": "/zivi_assignment/static/media/product4.1b1511bb89ef685577e6.png",
@@ -27,10 +27,10 @@
     "static/media/emptyHeart.svg": "/zivi_assignment/static/media/emptyHeart.4e9be66e758f546038c168696da24d8e.svg",
     "static/media/goldStar.svg": "/zivi_assignment/static/media/goldStar.a79bfaa9cff36632833412bb1a0bf4d0.svg",
     "main.b6d90b0d.css.map": "/zivi_assignment/static/css/main.b6d90b0d.css.map",
-    "main.6f6235a5.js.map": "/zivi_assignment/static/js/main.6f6235a5.js.map"
+    "main.ea404454.js.map": "/zivi_assignment/static/js/main.ea404454.js.map"
   },
   "entrypoints": [
     "static/css/main.b6d90b0d.css",
-    "static/js/main.6f6235a5.js"
+    "static/js/main.ea404454.js"
   ]
 }
