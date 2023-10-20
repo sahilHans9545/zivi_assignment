@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../../components/logo";
 import SearchBar from "../../components/searchBar/SearchBar";
 import "./style.scss";
@@ -18,14 +18,42 @@ import star4 from "../../assets/images/star4.svg";
 import star5 from "../../assets/images/star5.svg";
 import filterIcon from "../../assets/images/filter.png";
 import FilterHeading from "../../components/FilterHeading";
+import { useParams } from "react-router-dom";
+import { fetchProducts } from "../../utils/fetchProducts";
 
 const Products = () => {
   const [showFilter, setShowFilter] = useState(false);
+  const [products, setProducts] = useState([]);
+  const { query } = useParams();
+  useEffect(() => {
+    console.log("new");
+    const options = {
+      method: "GET",
+      url: "https://real-time-product-search.p.rapidapi.com/search",
+      params: {
+        q: query,
+        country: "in",
+        language: "en",
+      },
+      headers: {
+        "X-RapidAPI-Key": "e52cc67da7msha25fd9764644777p174987jsn6ececba144f1",
+        "X-RapidAPI-Host": "real-time-product-search.p.rapidapi.com",
+      },
+    };
+
+    getProducts(options);
+  }, [query]);
+
+  const getProducts = async (options) => {
+    const searchedProducts = await fetchProducts(options);
+    setProducts(searchedProducts);
+  };
   return (
     <div
       id="productsPage"
       className=" relative w-full min-h-[100vh]  pb-14 gap-5"
     >
+      <div>{query}</div>
       <Logo />
       <div className="md:mt-0 mt-14 px-5 md:px-0">
         <SearchBar />
